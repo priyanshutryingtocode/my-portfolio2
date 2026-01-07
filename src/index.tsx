@@ -66,6 +66,14 @@ const PROJECTS = [
     liveUrl: '',
     githubUrl: 'https://github.com/priyanshutryingtocode/Implementation-of-Deep-Learning-for-Congestion-Prediction-in-VLSI',
   },
+  {
+    title: 'Asteroid Class Prediction',
+    description: 'An asteroid class prediction project that utilizes machine learning algorithms to classify asteroids based on their physical and orbital characteristics.',
+    tags: ['Python', 'Machine-Learning', 'Data-Science'],
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRGQWgLcFT_A597orPrySGf3MdTDPM68FSQg&s',
+    liveUrl: '',
+    githubUrl: 'https://github.com/priyanshutryingtocode/Asteroid-Class-Prediction',
+  },
   
 ];
 
@@ -75,9 +83,9 @@ const WORK_EXPERIENCE = [
     company: 'HCLTech',
     duration: 'May 2025 - June 2025',
     description: [
-      'Developed features for an LLM based client for customers of online e-commerce platforms.',
-      'Collaborated with a team of 5 engineers.',
-      'Implemented various ML models and algorithms to enhance the client\'s capabilities.',
+      'Worked with a team of 5 engineers in the Engineering domain, and contributed to various projects.',
+      'Utilized Large Language Models (LLMs) to extract key information using RAG based techniques.',
+      'Trained and evaluated various machine learning models to improve performance and accuracy.',
     ],
   },
 ];
