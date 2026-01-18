@@ -43,6 +43,14 @@ const PROJECTS = [
     githubUrl: 'https://github.com/priyanshutryingtocode/ChatbotProject',
   },
   {
+    title: 'LuminaBooks',
+    description: 'A React-based frontend design for a worldwide book publisher and sales franchise landing page, featuring responsive design and interactive elements to enhance user engagement.',
+    tags: ['React', 'Tailwind-CSS', 'Development'],
+    image: 'https://i.pinimg.com/736x/90/a8/d3/90a8d3e2aa2479ecf3ad51f5b99db790.jpg',
+    liveUrl: 'https://lumina-books-1ifc-qebsoesvx.vercel.app/',
+    githubUrl: 'https://github.com/priyanshutryingtocode/LuminaBooks',
+  },
+  {
     title: 'Student Management System',
     description: 'A simple terminal-based Student Management System built using C++, allowing CRUD operations on student records with data persistence using file handling.',
     tags: ['C++', 'File-Handling', 'OOP'],
