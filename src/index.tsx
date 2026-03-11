@@ -17,7 +17,7 @@ const EDUCATION = [
     university: 'Indian Institute of Information Technology, Sri City',
     duration: 'August 2023 - Present',
     details: [
-      'Current CGPA: 8.54',
+      'Current CGPA: 8.5',
       'Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming',
     ],
   },
@@ -41,6 +41,22 @@ const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=2070&auto=format&fit=crop',
     liveUrl: 'https://chatbotproject-4vsvmq4kgebnur4cootjn7.streamlit.app/',
     githubUrl: 'https://github.com/priyanshutryingtocode/ChatbotProject',
+  },
+  {
+    title: 'Reseldia',
+    description: 'A full-stack React application for an exclusive residential community platform, featuring responsive design, event management, and interactive elements like live polls to enhance neighbor engagement.',
+    tags: ['React', 'Tailwind-CSS', 'Supabase'],
+    image: 'https://www.commercialproperty.review/wp-content/uploads/2020/11/prestige-shantiniketan-Bangalore.jpg',
+    liveUrl: 'https://reseldia.vercel.app',
+    githubUrl: 'https://github.com/priyanshutryingtocode/Reseldia',
+  },
+  {
+    title: 'TuneTurtle',
+    description: 'A full-stack AI music intelligence dashboard built with React and Node.js, featuring dynamic mood-based theming, real-time lyrics extraction, and interactive AI analysis to enhance music discovery.',
+    tags: ['React', 'Artificial Intelligence', 'Development'],
+    image: 'https://www.shutterstock.com/image-vector/joyful-turtle-swimming-listening-music-260nw-1155796480.jpg',
+    liveUrl: 'https://tune-turtle.vercel.app/',
+    githubUrl: 'https://github.com/priyanshutryingtocode/TuneTurtle',
   },
   {
     title: 'LuminaBooks',
@@ -107,7 +123,7 @@ const WORK_EXPERIENCE = [
     company: 'HCLTech',
     duration: 'May 2025 - June 2025',
     description: [
-      'Worked with a team of 5 engineers in the Engineering domain, and contributed to various projects.',
+      'Worked with a team of 5 in the Engineering domain, and contributed to various projects.',
       'Utilized Large Language Models (LLMs) to extract key information using RAG based techniques.',
       'Trained and evaluated various machine learning models to improve performance and accuracy.',
     ],
