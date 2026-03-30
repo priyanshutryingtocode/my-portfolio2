@@ -39,7 +39,7 @@ const PROJECTS = [
     description: 'A chatbot that leverages Gemini, Langchain and Supabase to access order details for a E-commerce platform, providing real-time assistance to customers, deployed via Streamlit.',
     tags: ['Python', 'Supabase', 'Langchain'],
     image: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=2070&auto=format&fit=crop',
-    liveUrl: 'https://chatbotproject-4vsvmq4kgebnur4cootjn7.streamlit.app/',
+    liveUrl: 'https://orderstatusassistant.streamlit.app/',
     githubUrl: 'https://github.com/priyanshutryingtocode/ChatbotProject',
   },
   {
