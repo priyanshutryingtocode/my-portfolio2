@@ -207,7 +207,7 @@ function App() {
       <main>
         <Hero />
         <About content={ABOUT_PLACEHOLDER} />
-        <Education /> {/* Corrected placement */}
+        <Education /> 
         <Skills />
         <WorkExperience />
         <Volunteering />
@@ -261,7 +261,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
         <a href="#" className="logo" onClick={handleLogoClick}>{DEVELOPER_NAME}</a>
         <nav className={isMenuOpen ? 'mobile-nav is-open' : 'mobile-nav'}>
           <a href="#about" onClick={handleNavClick}>About</a>
-          <a href="#education" onClick={handleNavClick}>Education</a> {/* Added Education link */}
+          <a href="#education" onClick={handleNavClick}>Education</a> 
           <a href="#skills" onClick={handleNavClick}>Skills</a>
           <a href="#experience" onClick={handleNavClick}>Experience</a>
           <a href="#volunteering" onClick={handleNavClick}>Volunteering</a>
@@ -285,8 +285,7 @@ interface SectionProps {
 }
 
 const Section: React.FC<SectionProps> = ({ id, className, children }) => {
-  // Memoize the options object to prevent re-running the hook's effect on every render
-  const options = useMemo(() => ({ threshold: 0.2 }), []);
+  const options = useMemo(() => ({ rootMargin: '0px 0px -10% 0px', threshold: 0.01 }), []);
   const [ref, isOnScreen] = useOnScreen(options);
 
   return (

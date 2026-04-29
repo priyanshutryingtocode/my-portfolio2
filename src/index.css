@@ -1,4 +1,4 @@
-/* === CSS RESET & BASE STYLES === */
+
 *,
 *::before,
 *::after {
@@ -162,7 +162,7 @@ h1, h2, h3 {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
   position: relative;
-  opacity: 1; /* Hero is visible by default */
+  opacity: 1; 
   transform: none;
 }
 
@@ -436,6 +436,11 @@ h1, h2, h3 {
 @media (max-width: 768px) {
     .hero-title { font-size: 3rem; }
     .section-title { font-size: 2.2rem; }
+    .container { padding: 0 1.25rem; }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 
     .header nav {
         position: fixed;
@@ -508,17 +513,16 @@ h1, h2, h3 {
 }
 
 @media (max-width: 480px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
     .hero-title { font-size: 2.5rem; }
     .hero-subtitle { font-size: 1.1rem; }
+    .project-links {
+        flex-direction: column;
+    }
 }
 
 
 /* === WORK EXPERIENCE & VOLUNTEERING === */
 
-/* List container for the cards */
 .experience-list,
 .volunteering-list {
     display: flex;
@@ -527,10 +531,9 @@ h1, h2, h3 {
     max-width: 800px;
     margin: 0 auto;
     position: relative;
-    padding-left: 2rem; /* Creates space for the timeline bar */
+    padding-left: 2rem; 
 }
 
-/* The vertical timeline bar */
 .experience-list::before,
 .volunteering-list::before {
     content: '';
@@ -543,7 +546,7 @@ h1, h2, h3 {
     opacity: 0.3;
 }
 
-/* The card for each job or role */
+
 .experience-card,
 .volunteering-card {
     background-color: var(--surface-color);
@@ -561,19 +564,19 @@ h1, h2, h3 {
     border-color: var(--primary-color);
 }
 
-/* The dot on the timeline for each card */
+
 .experience-card::before,
 .volunteering-card::before {
     content: '';
     position: absolute;
-    left: -2.5rem; /* Aligns the dot over the timeline bar */
+    left: -2.5rem; 
     top: 1.6rem;
     transform: translateY(-50%);
     width: 12px;
     height: 12px;
     background-color: var(--primary-color);
     border-radius: 50%;
-    border: 2px solid var(--bg-color); /* Creates a cutout effect */
+    border: 2px solid var(--bg-color);
     z-index: 1;
 }
 
@@ -596,7 +599,7 @@ h1, h2, h3 {
 
 .job-description,
 .activity-description {
-    list-style-type: none; /* Remove default bullet points */
+    list-style-type: none; 
     padding-left: 0;
     color: var(--text-secondary-color);
 }
@@ -628,7 +631,7 @@ h1, h2, h3 {
 .education-card {
   background-color: var(--surface-color);
   border: 1px solid var(--border-color);
-  border-left: 5px solid var(--primary-color); /* Accent border */
+  border-left: 5px solid var(--primary-color); 
   border-radius: 8px;
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
