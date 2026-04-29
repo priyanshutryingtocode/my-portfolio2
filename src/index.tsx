@@ -2,6 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+
 import React, { useEffect, useState, useRef, useMemo } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -26,7 +27,6 @@ const EDUCATION = [
 const SKILLS = [
   { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
   { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg' },
-  { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg' },
   { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
   { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' },
   { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg' },
@@ -65,6 +65,14 @@ const PROJECTS = [
     image: 'https://i.pinimg.com/736x/90/a8/d3/90a8d3e2aa2479ecf3ad51f5b99db790.jpg',
     liveUrl: 'https://lumina-books-1ifc-qebsoesvx.vercel.app/',
     githubUrl: 'https://github.com/priyanshutryingtocode/LuminaBooks',
+  },
+  {
+    title: 'WebCalendar',
+    description: 'A React-based web calendar based on actual wall calendars, featuring a clean and intuitive design with interactive elements for date selection, note taking, and images based on the month and season.',
+    tags: ['React', 'Tailwind-CSS', 'Development'],
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKLzynrpCkuM0PqzokUa7GpmbA-2v6OViaUQ&s',
+    liveUrl: 'https://web-calendar-teal.vercel.app/',
+    githubUrl: 'https://github.com/priyanshutryingtocode/WebCalendar',
   },
   {
     title: 'Student Management System',
@@ -123,9 +131,9 @@ const WORK_EXPERIENCE = [
     company: 'HCLTech',
     duration: 'May 2025 - June 2025',
     description: [
-      'Worked with a team of 5 in the Engineering domain, and contributed to various projects.',
-      'Utilized Large Language Models (LLMs) to extract key information using RAG based techniques.',
-      'Trained and evaluated various machine learning models to improve performance and accuracy.',
+      'Developed pipelines leveraging Large Language Models and Retrieval-Augmented Generation (RAG) to extract structured insights from large volumes of unstructured engineering data.',
+      ' Trained, and evaluated multiple machine learning models for engineering-domain datasets using Python-based ML frameworks, improving model prediction accuracy through iterative optimization.',
+      'Worked in a 5-member engineering team to design and test AI-driven solutions, contributing to model experimentation, data preprocessing, and performance evaluation.',
     ],
   },
 ];
