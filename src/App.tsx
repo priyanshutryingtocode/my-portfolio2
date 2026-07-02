@@ -291,18 +291,27 @@ const Hero = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    let particles: any[] = [];
+    interface Particle
+    {
+      x: number;
+      y: number;
+      radius: number;
+      vx: number;
+      vy: number;
+    }
+
+let particles: Particle[] = [];
 
     const createParticles = () => {
       particles = [];
-      const particleCount = Math.floor(window.innerWidth / 15);
+      const particleCount = Math.floor(window.innerWidth / 40);
       for (let i = 0; i < particleCount; i++) {
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          radius: Math.random() * 1.5 + 0.5,
-          vx: Math.random() * 0.5 - 0.25,
-          vy: Math.random() * 0.5 - 0.25,
+          radius: Math.random() * 1 + 0.4,
+          vx: Math.random() * 0.2 - 0.1,
+          vy: Math.random() * 0.2 - 0.1,
         });
       }
     };
@@ -317,7 +326,7 @@ const Hero = () => {
     const animate = () => {
       animationFrameId = requestAnimationFrame(animate);
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+      ctx.fillStyle = 'rgba(200, 168, 118, 0.35)';
 
       particles.forEach(p => {
         p.x += p.vx;
@@ -346,8 +355,9 @@ const Hero = () => {
     <section className="hero">
       <canvas id="hero-canvas" ref={canvasRef}></canvas>
       <div className="container">
-        <h1 className="hero-title">Full Stack Developer & AI-ML Enthusiast</h1>
-        <p className="hero-subtitle">I design and build beautiful, responsive, and robust web applications, along with convenient and modern AI-ML projects</p>
+        <span className="hero-eyebrow">Full Stack Developer</span>
+        <h1 className="hero-title">Building thoughtful <em>web</em> &amp; AI-ML experiences</h1>
+        <p className="hero-subtitle">I design and build clean, responsive web applications, alongside practical AI-ML projects that solve real problems.</p>
         <a href="#projects" className="btn btn-primary">View My Work</a>
       </div>
     </section>
