@@ -125,13 +125,21 @@ const PROJECTS = [
 
 const WORK_EXPERIENCE = [
   {
+    title: 'Full Stack Intern',
+    company: 'Silvertouch Technologies Ltd',
+    duration: 'May 2026 - June 2026',
+    description: [
+      'Contributed to client-facing Angular/TypeScript applications within a cross-functional team, building reusable components and services, debugging production issues, and improving code modularity across the codebase.',
+      'Architected and maintained RESTful APIs, bridging frontend interfaces with backend data services; reduced application load time by 50% through strategic implementation of lazy loading.',
+    ],
+  },
+  {
     title: 'AI/ML Development Intern',
     company: 'HCLTech',
     duration: 'May 2025 - June 2025',
     description: [
-      'Developed pipelines leveraging Large Language Models and Retrieval-Augmented Generation (RAG) to extract structured insights from large volumes of unstructured engineering data.',
-      'Trained, and evaluated multiple machine learning models for engineering-domain datasets using Python-based ML frameworks, improving model prediction accuracy through iterative optimization.',
-      'Worked in a 5-member engineering team to design and test AI-driven solutions, contributing to model experimentation, data preprocessing, and performance evaluation.',
+      'Built a LangChain-powered RAG pipeline for tabular CSV data, integrating retrieval mechanisms, prompt engineering, and LLM orchestration to enable accurate responses to complex natural-language queries.',
+      'Benchmarked transformer models including Llama, Mistral, and DeepSeek using Hugging Face and Ollama; conducted local inference tests across temperature, top-k, and top-p configurations to analyse and optimise generation behaviour.',
     ],
   },
 ];

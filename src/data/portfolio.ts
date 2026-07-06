@@ -169,13 +169,21 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    title: 'Full Stack Intern',
+    organization: 'Silvertouch Technologies Ltd',
+    duration: 'May 2026 - June 2026',
+    details: [
+      'Contributed to client-facing Angular/TypeScript applications within a cross-functional team, building reusable components and services, debugging production issues, and improving code modularity across the codebase.',
+      'Architected and maintained RESTful APIs, bridging frontend interfaces with backend data services; reduced application load time by 50% through strategic implementation of lazy loading.',
+    ],
+  },
+  {
     title: 'AI/ML Development Intern',
     organization: 'HCLTech',
     duration: 'May 2025 - June 2025',
     details: [
-      'Built LLM and RAG pipelines for extracting structured insights from engineering data.',
-      'Trained and evaluated Python-based ML models through iterative experimentation.',
-      'Collaborated in a 5-member engineering team on data preprocessing and model evaluation.',
+      'Built a LangChain-powered RAG pipeline for tabular CSV data, integrating retrieval mechanisms, prompt engineering, and LLM orchestration to enable accurate responses to complex natural-language queries.',
+      'Benchmarked transformer models including Llama, Mistral, and DeepSeek using Hugging Face and Ollama; conducted local inference tests across temperature, top-k, and top-p configurations to analyse and optimise generation behaviour.',
     ],
   },
 ];
