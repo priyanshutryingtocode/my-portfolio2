@@ -18,7 +18,7 @@ export function Header({ activePage }: HeaderProps) {
 
   return (
     <header className="site-header">
-      <a className="brand" href="#/home" onClick={() => setMenuOpen(false)} aria-label="Go to home page">
+      <a className="brand" href="#home" onClick={() => setMenuOpen(false)} aria-label="Go to home page">
         <span>{developer.initials}</span>
         <strong>{developer.name}</strong>
       </a>
