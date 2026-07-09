@@ -35,6 +35,24 @@ export default function App() {
     return () => observerRef.current?.disconnect();
   }, []);
 
+  useEffect(() => {
+    const revealTargets = Array.from(document.querySelectorAll<HTMLElement>('.reveal'));
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
+    );
+
+    revealTargets.forEach((target) => revealObserver.observe(target));
+    return () => revealObserver.disconnect();
+  }, []);
+
   return (
     <div className="app-shell">
       <Header activePage={activeSection} />
@@ -70,7 +88,7 @@ export default function App() {
             </aside>
           </div>
 
-          <div className="section-block">
+          <div className="section-block reveal">
             <div className="section-heading">
               <div>
                 <p className="eyebrow">Selected work</p>
@@ -85,7 +103,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="section-block skill-band">
+          <div className="section-block skill-band reveal">
             <div className="section-heading-stacked">
               <p className="eyebrow">Toolbox</p>
               <h2>Comfortable across product, frontend, backend, and ML workflows.</h2>
@@ -105,7 +123,7 @@ export default function App() {
             copy={developer.about}
           />
 
-          <div className="about-layout">
+          <div className="about-layout reveal">
             <div className="about-portrait">
               <img src={developer.profilePic} alt={developer.name} />
             </div>
@@ -122,28 +140,29 @@ export default function App() {
             </div>
           </div>
 
-          <div className="section-block two-column">
-            <div className="section-card">
-              <p className="eyebrow">Education</p>
-              <Timeline items={education} />
+          <div className="section-block two-column reveal">
+            <div className="about-column">
+              <div className="section-card">
+                <p className="eyebrow">Education</p>
+                <Timeline items={education} />
+              </div>
+              <div className="section-card">
+                <p className="eyebrow">Leadership</p>
+                <Timeline items={leadership} />
+              </div>
             </div>
-            <div className="section-card">
-              <p className="eyebrow">Experience</p>
-              <Timeline items={experience} />
-            </div>
-          </div>
-
-          <div className="section-block two-column">
-            <div className="section-card">
-              <p className="eyebrow">Leadership</p>
-              <Timeline items={leadership} />
-            </div>
-            <div className="section-card">
-              <p className="eyebrow">Core skills</p>
-              <div className="skill-cloud is-contained">
-                {skills.map((skill) => (
-                  <span key={skill}>{skill}</span>
-                ))}
+            <div className="about-column">
+              <div className="section-card">
+                <p className="eyebrow">Experience</p>
+                <Timeline items={experience} />
+              </div>
+              <div className="section-card">
+                <p className="eyebrow">Core skills</p>
+                <div className="skill-cloud is-contained">
+                  {skills.map((skill) => (
+                    <span key={skill}>{skill}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -156,7 +175,7 @@ export default function App() {
             copy="The strongest pieces are featured first, followed by smaller builds that show breadth across web, AI, data, and systems."
           />
 
-          <div className="projects-layout">
+          <div className="projects-layout reveal">
             {projects.map((project) => (
               <ProjectCard project={project} key={project.title} />
             ))}
@@ -164,10 +183,10 @@ export default function App() {
         </section>
 
         <section id="contact" className="page page-contact">
-          <div className="contact-page page-grid">
+          <div className="contact-page page-grid reveal">
             <div className="contact-copy">
               <p className="eyebrow">Contact</p>
-              <h1>Have an idea, role, or collaboration in mind?</h1>
+              <h2>Have an idea, role, or collaboration in mind?</h2>
               <p>
                 The fastest way to reach me is through LinkedIn or GitHub. I am especially interested in web apps, AI-assisted
                 tools, and products where design quality matters.

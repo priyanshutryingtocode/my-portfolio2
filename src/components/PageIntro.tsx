@@ -7,9 +7,9 @@ interface PageIntroProps {
 
 export function PageIntro({ eyebrow, title, copy, align = 'left' }: PageIntroProps) {
   return (
-    <section className={`page-intro page-intro-${align}`}>
+    <section className={`page-intro page-intro-${align} reveal`}>
       <p className="eyebrow">{eyebrow}</p>
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <p>{copy}</p>
     </section>
   );
