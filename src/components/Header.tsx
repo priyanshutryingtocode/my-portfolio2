@@ -29,7 +29,7 @@ export function Header({ activePage }: HeaderProps) {
       <div className="header-inner">
         <a className="brand" href="#home" onClick={() => setMenuOpen(false)} aria-label="Go to home page">
           <span>{developer.initials}</span>
-          <strong>{developer.name}</strong>
+          <strong>Portfolio</strong>
         </a>
 
         <nav className={menuOpen ? 'site-nav is-open' : 'site-nav'} aria-label="Primary navigation">

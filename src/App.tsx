@@ -7,7 +7,7 @@ import { Timeline } from './components/Timeline';
 import { developer, education, experience, leadership, projects, skills } from './data/portfolio';
 import type { PageId } from './types';
 
-const sectionIds: PageId[] = ['home', 'about', 'projects', 'contact'];
+const sectionIds: PageId[] = ['home', 'projects', 'contact'];
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<PageId>('home');
@@ -40,29 +40,21 @@ export default function App() {
       <main>
         <section id="home" className="page page-home">
           <div className="home-hero page-grid">
-            <p className="eyebrow">{developer.location}</p>
             <h1>{developer.name}</h1>
-            <p>{developer.role}. I build clean web products, practical AI/ML experiments, and interfaces that are easy to use.</p>
-            <div className="action-row">
+            {/* <p>{developer.role}. I build clean web products, practical AI/ML experiments, and interfaces that are easy to use.</p> */}
+            {/* <div className="action-row">
               <a className="button button-primary" href="#projects">View Projects</a>
-              <a className="button button-ghost" href="#contact">Contact</a>
-            </div>
+              <a className="button button-ghost" href="#home-about">About</a>
+            </div> */}
           </div>
-        </section>
 
-        <section id="about" className="page page-about">
-          <PageIntro
-            eyebrow="About"
-            title="Engineering, interface taste, and practical AI."
-            copy={developer.about}
-          />
-
-          <div className="about-layout">
+          <div id="home-about" className="about-layout">
             <div className="about-portrait">
               <img src={developer.profilePic} alt={developer.name} />
             </div>
             <div className="about-story">
-              <h2>What I focus on</h2>
+              <h2>Engineering, interface taste, and practical AI.</h2>
+              <p>{developer.about}</p>
               <p>
                 I like projects where the interface is calm, the system underneath is useful, and the final product feels
                 easy to understand. My work sits between frontend craft, backend practicality, and AI/ML experimentation.
