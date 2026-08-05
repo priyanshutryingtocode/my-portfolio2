@@ -1,17 +1,15 @@
 import type { Project } from '../types';
+import { getProjectAccentColor } from '../utils/tagColors';
 
 interface ProjectCardProps {
   project: Project;
-  variant?: 'large' | 'compact';
 }
 
-export function ProjectCard({ project, variant = 'compact' }: ProjectCardProps) {
+export function ProjectCard({ project }: ProjectCardProps) {
+  const accentColor = getProjectAccentColor(project.tags);
+
   return (
-    <article className={`project-card ${variant === 'large' ? 'project-card-large' : ''}`}>
-      <div className="project-media">
-        <img src={project.image} alt="" loading="lazy" />
-        {project.featured && <span>Featured</span>}
-      </div>
+    <article className="project-card" style={{ borderLeftColor: accentColor } as React.CSSProperties}>
       <div className="project-body">
         <h2>{project.title}</h2>
         <p>{project.description}</p>
