@@ -41,11 +41,10 @@ export default function App() {
         <section id="home" className="page page-home">
           <div className="home-hero page-grid">
             <h1>{developer.name}</h1>
-            {/* <p>{developer.role}. I build clean web products, practical AI/ML experiments, and interfaces that are easy to use.</p> */}
-            {/* <div className="action-row">
+            <p>{developer.role}. I build clean web products, practical AI/ML experiments, and interfaces that are easy to use.</p>
+            <div className="action-row">
               <a className="button button-primary" href="#projects">View Projects</a>
-              <a className="button button-ghost" href="#home-about">About</a>
-            </div> */}
+            </div>
           </div>
 
           <div id="home-about" className="about-layout">
