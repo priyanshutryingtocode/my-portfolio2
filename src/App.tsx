@@ -49,7 +49,7 @@ export default function App() {
 
           <div id="home-about" className="about-layout">
             <div className="about-portrait">
-              <img src={developer.profilePic} alt={developer.name} />
+              <img src={developer.mainPic} alt={developer.name} />
             </div>
             <div className="about-story">
               <h2>Engineering, interface taste, and practical AI.</h2>

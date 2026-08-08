@@ -1,4 +1,5 @@
 import profilePic from '../assets/profile-pic.png';
+import mainPic from '../assets/me_pic.jpeg';
 import type { NavItem, Project, TimelineItem } from '../types';
 
 export const developer = {
@@ -7,6 +8,7 @@ export const developer = {
   role: 'Full-stack Developer and AI/ML Builder',
   location: 'Sri City, India',
   profilePic,
+  mainPic,
   about:
     'I build polished web apps and practical AI/ML projects, with a focus on clean interfaces, fast iteration, and ideas that are easy to understand once they are in someone hands.',
   links: {

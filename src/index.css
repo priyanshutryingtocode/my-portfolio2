@@ -91,15 +91,13 @@ img {
   text-decoration: none;
 }
 
-.brand span {
-  display: grid;
+.brand img {
+  display: block;
   width: 36px;
   height: 36px;
-  place-items: center;
-  border: 1px solid var(--line-strong);
   border-radius: 50%;
-  color: var(--accent);
-  font-family: var(--font-serif);
+  object-fit: cover;
+  border: 1px solid var(--line-strong);
 }
 
 .brand strong {

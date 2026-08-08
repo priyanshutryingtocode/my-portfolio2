@@ -28,7 +28,7 @@ export function Header({ activePage }: HeaderProps) {
     <header className={isScrolled ? 'site-header is-scrolled' : 'site-header'}>
       <div className="header-inner">
         <a className="brand" href="#home" onClick={() => setMenuOpen(false)} aria-label="Go to home page">
-          <span>{developer.initials}</span>
+          <img className="brand-image" src={developer.profilePic} alt="" />
           <strong>Portfolio</strong>
         </a>
 
