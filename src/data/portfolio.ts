@@ -28,6 +28,7 @@ export const stats = [
   { value: '12+', label: 'Projects' },
   { value: '8.5', label: 'CGPA' },
   { value: '2025', label: 'AI/ML Internship' },
+  { value: '2026', label: 'Full Stack Internship' },
 ];
 
 export const skills = [
@@ -46,14 +47,14 @@ export const skills = [
 ];
 
 export const projects: Project[] = [
-  {
-    title: 'AI Order Assistance Chatbot',
+    {
+    title: 'Influencer Matcher',
     description:
-      'A Gemini, LangChain, and Supabase chatbot that retrieves order details and gives real-time customer support through a Streamlit interface.',
-    tags: ['Python', 'Supabase', 'LangChain'],
+      'A web application that matches brands with social media influencers based on campaign requirements, audience demographics, and engagement metrics.',
+    tags: ['Python', 'Supabase', 'RAG'],
     image: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=1600&auto=format&fit=crop',
-    liveUrl: 'https://orderstatusassistant.streamlit.app/',
-    githubUrl: 'https://github.com/priyanshutryingtocode/ChatbotProject',
+    liveUrl: 'https://influencermatcher.streamlit.app//',
+    githubUrl: 'https://github.com/priyanshutryingtocode/influencer_matcher',
     featured: true,
   },
   {
@@ -66,6 +67,16 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/priyanshutryingtocode/kinorbia',
     featured: true,
   },
+    {
+    title: 'AI Order Assistance Chatbot',
+    description:
+      'A Gemini, LangChain, and Supabase chatbot that retrieves order details and gives real-time customer support through a Streamlit interface.',
+    tags: ['Python', 'Supabase', 'LangChain'],
+    image: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=1600&auto=format&fit=crop',
+    liveUrl: 'https://orderstatusassistant.streamlit.app/',
+    githubUrl: 'https://github.com/priyanshutryingtocode/ChatbotProject',
+    featured: true,
+  },
   {
     title: 'Reseldia',
     description:
@@ -75,6 +86,16 @@ export const projects: Project[] = [
     liveUrl: 'https://reseldia.vercel.app',
     githubUrl: 'https://github.com/priyanshutryingtocode/Reseldia',
     featured: true,
+  },
+  {
+    title: 'ReBot - AI Commit Analyser',
+    description:
+      'A RAG-powered AI tool that analyzes GitHub commit messages and provides insights on code quality, trends, and potential improvements.',
+    tags: ['Python', 'Supabase', 'RAG'],
+    image: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=1600&auto=format&fit=crop',
+    liveUrl: 'https://rebotcodereview.streamlit.app/',
+    githubUrl: 'https://github.com/priyanshutryingtocode/ReBot',
+    featured: false,
   },
   {
     title: 'TuneTurtle',
