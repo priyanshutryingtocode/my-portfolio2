@@ -41,7 +41,7 @@ export default function App() {
         <section id="home" className="page page-home">
           <div className="home-hero page-grid">
             <h1>{developer.name}</h1>
-            <p>{developer.role}. I build clean web products, practical AI/ML experiments, and interfaces that are easy to use.</p>
+            <p>{developer.role}. I build clean web products and practical AI/ML experiments.</p>
             <div className="action-row">
               <a className="button button-primary" href="#projects">View Projects</a>
             </div>
@@ -55,7 +55,7 @@ export default function App() {
               <h2>Engineering, interface taste, and practical AI.</h2>
               <p>{developer.about}</p>
               <p>
-                I like projects where the interface is calm, the system underneath is useful, and the final product feels
+                I like projects where the interface is clean, the system underneath is useful, and the final product feels
                 easy to understand. My work sits between frontend craft, backend practicality, and AI/ML experimentation.
               </p>
               <div className="skill-cloud">
@@ -83,8 +83,8 @@ export default function App() {
         <section id="projects" className="page page-projects">
           <PageIntro
             eyebrow="Projects"
-            title="Selected builds across web, AI, and data."
-            copy="A compact view of shipped projects, experiments, and practical tools."
+            title="Selected builds across web, AI, and hardware."
+            copy="A compact view of my projects."
           />
 
           <div className="projects-layout">
@@ -99,7 +99,7 @@ export default function App() {
             <div className="contact-copy">
               <p className="eyebrow">Contact</p>
               <h2>Open to internships, collaborations, and project conversations.</h2>
-              <p>Reach me through LinkedIn or GitHub. I am especially interested in thoughtful web apps and AI-assisted tools.</p>
+              <p>Reach me through LinkedIn or GitHub. I am especially interested in SDE, web and GenAI roles.</p>
               <div className="action-row">
                 <a className="button button-primary" href={developer.links.linkedin} target="_blank" rel="noopener noreferrer">
                   LinkedIn

@@ -52,7 +52,6 @@ export const projects: Project[] = [
     description:
       'A web application that matches brands with social media influencers based on campaign requirements, audience demographics, and engagement metrics.',
     tags: ['Python', 'Supabase', 'RAG'],
-    image: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=1600&auto=format&fit=crop',
     liveUrl: 'https://influencermatcher.streamlit.app//',
     githubUrl: 'https://github.com/priyanshutryingtocode/influencer_matcher',
     featured: true,
@@ -62,7 +61,6 @@ export const projects: Project[] = [
     description:
       'A movie discovery and watchlist platform for film enthusiasts, built with a responsive Next.js interface and community-first product flows.',
     tags: ['Next.js', 'Tailwind CSS', 'MongoDB'],
-    image: 'https://images.pexels.com/photos/7991486/pexels-photo-7991486.jpeg?auto=compress&cs=tinysrgb&w=1600',
     liveUrl: 'https://kinorbia.vercel.app',
     githubUrl: 'https://github.com/priyanshutryingtocode/kinorbia',
     featured: true,
@@ -72,7 +70,6 @@ export const projects: Project[] = [
     description:
       'A Gemini, LangChain, and Supabase chatbot that retrieves order details and gives real-time customer support through a Streamlit interface.',
     tags: ['Python', 'Supabase', 'LangChain'],
-    image: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=1600&auto=format&fit=crop',
     liveUrl: 'https://orderstatusassistant.streamlit.app/',
     githubUrl: 'https://github.com/priyanshutryingtocode/ChatbotProject',
     featured: true,
@@ -82,7 +79,6 @@ export const projects: Project[] = [
     description:
       'A residential community platform with event management, responsive layouts, and live engagement features for neighborhood interaction.',
     tags: ['React', 'Tailwind CSS', 'Supabase'],
-    image: 'https://www.commercialproperty.review/wp-content/uploads/2020/11/prestige-shantiniketan-Bangalore.jpg',
     liveUrl: 'https://reseldia.vercel.app',
     githubUrl: 'https://github.com/priyanshutryingtocode/Reseldia',
     featured: true,
@@ -92,7 +88,6 @@ export const projects: Project[] = [
     description:
       'A RAG-powered AI tool that analyzes GitHub commit messages and provides insights on code quality, trends, and potential improvements.',
     tags: ['Python', 'Supabase', 'RAG'],
-    image: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=1600&auto=format&fit=crop',
     liveUrl: 'https://rebotcodereview.streamlit.app/',
     githubUrl: 'https://github.com/priyanshutryingtocode/ReBot',
     featured: false,
@@ -102,7 +97,6 @@ export const projects: Project[] = [
     description:
       'An AI music intelligence dashboard with mood-based theming, lyrics extraction, and interactive analysis for music discovery.',
     tags: ['React', 'AI', 'Node.js'],
-    image: 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=1600&auto=format&fit=crop',
     liveUrl: 'https://tune-turtle.vercel.app/',
     githubUrl: 'https://github.com/priyanshutryingtocode/TuneTurtle',
   },
@@ -111,7 +105,6 @@ export const projects: Project[] = [
     description:
       'A responsive publisher and book sales landing page focused on editorial visuals, product storytelling, and smooth front-end interactions.',
     tags: ['React', 'Tailwind CSS', 'UI Design'],
-    image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1600&auto=format&fit=crop',
     liveUrl: 'https://lumina-books-1ifc-qebsoesvx.vercel.app/',
     githubUrl: 'https://github.com/priyanshutryingtocode/LuminaBooks',
   },
@@ -120,7 +113,6 @@ export const projects: Project[] = [
     description:
       'A web calendar inspired by physical wall calendars, with month imagery, date selection, and note-taking interactions.',
     tags: ['React', 'Tailwind CSS', 'UX'],
-    image: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1600&auto=format&fit=crop',
     liveUrl: 'https://web-calendar-teal.vercel.app/',
     githubUrl: 'https://github.com/priyanshutryingtocode/WebCalendar',
   },
@@ -129,25 +121,14 @@ export const projects: Project[] = [
     description:
       'A Streamlit simulator for mobile network handoffs, modeling signal strength, latency, and performance across network cells.',
     tags: ['Python', 'Streamlit', 'Matplotlib'],
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop',
     liveUrl: 'https://handoff-simulator-7011.streamlit.app/',
     githubUrl: 'https://github.com/priyanshutryingtocode/Handoff-Simulator',
-  },
-  {
-    title: 'Weather App',
-    description:
-      'A Dockerized weather application deployed on Render, delivering real-time weather updates from a public API.',
-    tags: ['Python', 'Docker', 'API'],
-    image: 'https://images.unsplash.com/photo-1695697478813-9cd8058712e7?w=1600&auto=format&fit=crop&q=80',
-    liveUrl: 'https://weatherapp-82c3.onrender.com/',
-    githubUrl: 'https://github.com/priyanshutryingtocode/WeatherApp',
   },
   {
     title: 'Student Management System',
     description:
       'A terminal-based C++ student record manager with CRUD operations and file-based persistence.',
     tags: ['C++', 'OOP', 'File Handling'],
-    image: 'https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1600&auto=format&fit=crop',
     githubUrl: 'https://github.com/priyanshutryingtocode/Student-Management-System',
   },
   {
@@ -155,7 +136,6 @@ export const projects: Project[] = [
     description:
       'A deep learning implementation for congestion prediction in VLSI design, aimed at improving placement and routing decisions.',
     tags: ['Python', 'Deep Learning', 'Image Processing'],
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop',
     githubUrl: 'https://github.com/priyanshutryingtocode/Implementation-of-Deep-Learning-for-Congestion-Prediction-in-VLSI',
   },
   {
@@ -163,17 +143,55 @@ export const projects: Project[] = [
     description:
       'A machine learning project that classifies asteroids using physical and orbital characteristics.',
     tags: ['Python', 'Machine Learning', 'Data Science'],
-    image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1600&auto=format&fit=crop',
     githubUrl: 'https://github.com/priyanshutryingtocode/Asteroid-Class-Prediction',
+  },
+  {
+    title: 'Snake Skate',
+    description:
+      'A replica of the classic Snake game built using JavaScript, HTML and CSS.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    liveUrl: 'https://priyanshutryingtocode.github.io/Snake-Skate/',
+    githubUrl: 'https://github.com/priyanshutryingtocode/Snake-Skate',
+  },
+  {
+    title: 'Home Automation System',
+    description:
+      'A home automation system built using embedded systems and C programming.',
+    tags: ['Arduino', 'Hardware', 'C'],
+    liveUrl: '',
+    githubUrl: 'https://github.com/priyanshutryingtocode/Embedded_Systems_Home_Automation_Mini_Project',
   },
   {
     title: 'Chat3PO',
     description:
       'A Flask and Socket.IO chatroom with real-time messaging and a Gemini-powered chatbot inspired by C-3PO.',
     tags: ['Python', 'Flask', 'Generative AI'],
-    image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1600&auto=format&fit=crop',
     liveUrl: 'https://chat3po.onrender.com/',
     githubUrl: 'https://github.com/priyanshutryingtocode/Chat3PO',
+  },
+  {
+    title: 'Object Counter',
+    description:
+      'A conveyor belt + ultrasonic sensor system that counts objects and displays the count on a cloud database, built using Arduino and C programming.',
+    tags: ['Arduino', 'Hardware', 'C'],
+    liveUrl: '',
+    githubUrl: 'https://github.com/priyanshutryingtocode/Control_System_Object_Counter',
+  },
+  {
+    title: 'Weather App',
+    description:
+      'A Dockerized weather application deployed on Render, delivering real-time weather updates from a public API.',
+    tags: ['Python', 'Docker', 'API'],
+    liveUrl: 'https://weatherapp-82c3.onrender.com/',
+    githubUrl: 'https://github.com/priyanshutryingtocode/WeatherApp',
+  },
+  {
+    title: 'Authentication Based Door Lock System',
+    description:
+      'A door lock system that uses a numeric keypad to control access.',
+    tags: ['Hardware', 'C++', 'C'],
+    liveUrl: '',
+    githubUrl: 'https://github.com/priyanshutryingtocode/Authentication_Based_Door_Unlocking',
   },
 ];
 
