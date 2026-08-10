@@ -20,6 +20,7 @@
   --accent: #c8a876;
   --header-bg: rgba(11, 11, 12, 0.82);
   --card-shadow: rgba(0, 0, 0, 0.35);
+  --glow: rgba(200, 168, 118, 0.07);
   --radius: 2px;
   --container: min(1040px, calc(100% - 40px));
   --font-serif: Fraunces, Georgia, serif;
@@ -41,6 +42,7 @@
   --accent: #a8874f;
   --header-bg: rgba(250, 249, 246, 0.85);
   --card-shadow: rgba(0, 0, 0, 0.12);
+  --glow: rgba(168, 135, 79, 0.05);
 }
 
 html {
@@ -71,6 +73,37 @@ button {
 img {
   display: block;
   max-width: 100%;
+}
+
+.app-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.app-shell::before,
+.app-shell::after {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(90px);
+}
+
+.app-shell::before {
+  top: -10%;
+  left: -10%;
+  width: 560px;
+  height: 560px;
+  background: var(--glow);
+}
+
+.app-shell::after {
+  bottom: -14%;
+  right: -12%;
+  width: 620px;
+  height: 620px;
+  background: var(--glow);
 }
 
 .site-header {
