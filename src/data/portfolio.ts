@@ -10,7 +10,7 @@ export const developer = {
   profilePic,
   mainPic,
   about:
-    'I build polished web apps and practical AI/ML projects, with a focus on clean interfaces, fast iteration, and ideas that are easy to understand once they are in someone hands.',
+    'I build polished web apps and practical AI/ML projects, with a focus on fast iteration and ideas that are easy to understand once they are in someones hands.',
   links: {
     github: 'https://github.com/priyanshutryingtocode',
     linkedin: 'https://www.linkedin.com/in/priyanshu-srivastava-523783290/',
@@ -123,6 +123,14 @@ export const projects: Project[] = [
     tags: ['Python', 'Streamlit', 'Matplotlib'],
     liveUrl: 'https://handoff-simulator-7011.streamlit.app/',
     githubUrl: 'https://github.com/priyanshutryingtocode/Handoff-Simulator',
+  },
+  {
+    title: 'Signal Clone',
+    description:
+      'A real-time chat application built with NextJS, Python and WebSockets, replicating the core features of the Signal messaging platform.',
+    tags: ['NextJS', 'Tailwind CSS', 'Python'],
+    liveUrl: 'https://signal-clone-ochre.vercel.app/',
+    githubUrl: 'https://github.com/priyanshutryingtocode/SignalClone',
   },
   {
     title: 'Student Management System',
