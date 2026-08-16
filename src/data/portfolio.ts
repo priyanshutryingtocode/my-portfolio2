@@ -24,13 +24,6 @@ export const navItems: NavItem[] = [
   { id: 'contact', label: 'Contact', href: '#contact' },
 ];
 
-export const stats = [
-  { value: '12+', label: 'Projects' },
-  { value: '8.5', label: 'CGPA' },
-  { value: '2025', label: 'AI/ML Internship' },
-  { value: '2026', label: 'Full Stack Internship' },
-];
-
 export const skills = [
   'React',
   'Next.js',
@@ -210,7 +203,7 @@ export const education: TimelineItem[] = [
     duration: 'August 2023 - Present',
     details: [
       'Current CGPA: 8.5',
-      'Relevant coursework includes Data Structures, OOP, Pattern Recognition, and Computer Networks.',
+      'Relevant coursework includes Data Structures and Algorithms, OOPs, Pattern Recognition, and Computer Networks.',
     ],
   },
 ];
@@ -221,8 +214,8 @@ export const experience: TimelineItem[] = [
     organization: 'Silvertouch Technologies Ltd',
     duration: 'May 2026 - June 2026',
     details: [
-      'Contributed to client-facing Angular/TypeScript applications within a cross-functional team, building reusable components and services, debugging production issues, and improving code modularity across the codebase.',
-      'Architected and maintained RESTful APIs, bridging frontend interfaces with backend data services; reduced application load time by 50% through strategic implementation of lazy loading.',
+      'Contributed to client-facing Angular/TypeScript applications within a cross-functional team, building 10+ reusable components and services, debugging production issues, and improving code modularity across the codebase.',
+      'Utilised RESTful APIs, bridging frontend interfaces with backend data services and ensuring reliable data flow; reduced application load time by 30% through strategic implementation of lazy loading.',
     ],
   },
   {
@@ -230,15 +223,15 @@ export const experience: TimelineItem[] = [
     organization: 'HCLTech',
     duration: 'May 2025 - June 2025',
     details: [
-      'Built a LangChain-powered RAG pipeline for tabular CSV data, integrating retrieval mechanisms, prompt engineering, and LLM orchestration to enable accurate responses to complex natural-language queries.',
-      'Benchmarked transformer models including Llama, Mistral, and DeepSeek using Hugging Face and Ollama; conducted local inference tests across temperature, top-k, and top-p configurations to analyse and optimise generation behaviour.',
+      'Worked on a LangChain-powered RAG pipeline for tabular CSV data, integrating retrieval mechanisms, prompt engineering, and LLM orchestration to answer complex natural-language queries with structured, source-grounded responses.',
+      'Benchmarked 3 transformer models (Llama, Mistral, DeepSeek) across 10+ configurations of temperature, top-k, and top-p using Hugging Face and Ollama, producing a comparative report on generation quality and inference latency to guide model selection.',
     ],
   },
 ];
 
 export const leadership: TimelineItem[] = [
-  { title: 'Design Lead', organization: 'Matrix', duration: 'August 2025 - Present' },
-  { title: 'Game Development Core Member', organization: 'IOTA', duration: 'August 2024 - May 2025' },
-  { title: 'Design Core Member', organization: 'Nirvana', duration: 'October 2024 - May 2025' },
-  { title: 'Design Core Member', organization: 'f/Stops', duration: 'September 2024 - May 2025' },
+  { title: 'Design Lead', organization: 'Matrix - Data Science Club', duration: 'August 2025 - Present' },
+  { title: 'Game Development Core Member', organization: 'IOTA - Projects Club', duration: 'August 2024 - May 2025' },
+  { title: 'Design Core Member', organization: 'Nirvana - Spirituality Club', duration: 'October 2024 - May 2025' },
+  { title: 'Design Core Member', organization: 'f/Stops - Photography Club', duration: 'September 2024 - May 2025' },
 ];
