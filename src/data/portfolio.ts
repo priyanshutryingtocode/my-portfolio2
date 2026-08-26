@@ -1,6 +1,6 @@
 import profilePic from '../assets/profile-pic.png';
 import mainPic from '../assets/me_pic.jpeg';
-import type { NavItem, Project, TimelineItem } from '../types';
+import type { NavItem, Project, SkillGroup, TimelineItem } from '../types';
 
 export const developer = {
   name: 'Priyanshu Srivastava',
@@ -20,6 +20,7 @@ export const developer = {
 
 export const navItems: NavItem[] = [
   { id: 'home', label: 'Home', href: '#home' },
+  { id: 'skills', label: 'Skills', href: '#skills' },
   { id: 'projects', label: 'Projects', href: '#projects' },
   { id: 'contact', label: 'Contact', href: '#contact' },
 ];
@@ -37,6 +38,32 @@ export const skills = [
   'Docker',
   'Streamlit',
   'Machine Learning',
+];
+
+export const skillGroups: SkillGroup[] = [
+  { label: 'Languages', items: ['Python', 'TypeScript', 'JavaScript', 'C++'] },
+  {
+    label: 'Full Stack',
+    items: [
+      'HTML',
+      'CSS',
+      'React',
+      'Next.js',
+      'Tailwind CSS',
+      'Node.js',
+      'Express.js',
+      'JWT',
+      'Supabase',
+      'MongoDB',
+      'PostgreSQL',
+    ],
+  },
+  { label: 'AI / GenAI', items: ['LangChain', 'Hugging Face'] },
+  { label: 'Libraries / Frameworks', items: ['Pandas', 'NumPy', 'Scikit-Learn', 'Streamlit'] },
+  {
+    label: 'Developer Tools',
+    items: ['Git', 'GitHub', 'GitHub Actions', 'Docker', 'Vercel', 'Render', 'Postman'],
+  },
 ];
 
 export const projects: Project[] = [

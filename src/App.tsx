@@ -4,10 +4,11 @@ import { Header } from './components/Header';
 import { PageIntro } from './components/PageIntro';
 import { ProjectCard } from './components/ProjectCard';
 import { Timeline } from './components/Timeline';
-import { developer, education, experience, leadership, projects, skills } from './data/portfolio';
+import { developer, education, experience, leadership, projects, skillGroups } from './data/portfolio';
+import { getSkillIcon } from './utils/skillIcons';
 import type { PageId } from './types';
 
-const sectionIds: PageId[] = ['home', 'projects', 'contact'];
+const sectionIds: PageId[] = ['home', 'skills', 'projects', 'contact'];
 
 export default function App() {
   const [activeSection, setActiveSection] = useState<PageId>('home');
@@ -58,11 +59,6 @@ export default function App() {
                 I like projects where the interface is clean, the system underneath is useful, and the final product feels
                 easy to understand. My work sits between frontend craft, backend practicality, and AI/ML experimentation.
               </p>
-              <div className="skill-cloud">
-                {skills.map((skill) => (
-                  <span key={skill}>{skill}</span>
-                ))}
-              </div>
             </div>
           </div>
 
@@ -76,6 +72,34 @@ export default function App() {
               <Timeline items={education} />
               <p className="eyebrow compact-eyebrow">Leadership</p>
               <Timeline items={leadership} />
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" className="page page-skills">
+          <div className="skills-band">
+            <PageIntro
+              eyebrow="Skills"
+              title="The tools I reach for when building."
+              copy="A quick snapshot of my everyday stack."
+            />
+            <div className="skill-groups">
+              {skillGroups.map((group) => (
+                <div className="skill-group" key={group.label}>
+                  <h3>{group.label}</h3>
+                  <ul className="skill-logos">
+                    {group.items.map((skill) => {
+                      const { Icon, color } = getSkillIcon(skill);
+                      return (
+                        <li key={skill} className="skill-logo">
+                          <Icon style={{ color }} aria-hidden="true" />
+                          <span>{skill}</span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         </section>

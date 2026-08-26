@@ -1,4 +1,4 @@
-export type PageId = 'home' | 'projects' | 'contact';
+export type PageId = 'home' | 'skills' | 'projects' | 'contact';
 
 export interface NavItem {
   id: PageId;
@@ -20,4 +20,9 @@ export interface TimelineItem {
   organization: string;
   duration: string;
   details?: string[];
+}
+
+export interface SkillGroup {
+  label: string;
+  items: string[];
 }
