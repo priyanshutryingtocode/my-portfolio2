@@ -62,7 +62,7 @@ export const skillGroups: SkillGroup[] = [
   { label: 'Libraries / Frameworks', items: ['Pandas', 'NumPy', 'Scikit-Learn', 'Streamlit'] },
   {
     label: 'Developer Tools',
-    items: ['Git', 'GitHub', 'GitHub Actions', 'Docker', 'Vercel', 'Render', 'Postman'],
+    items: ['Git', 'GitHub', 'Docker', 'Vercel', 'Render', 'Postman'],
   },
 ];
 
