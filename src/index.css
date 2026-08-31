@@ -628,7 +628,7 @@ img {
 
 @media (max-width: 720px) {
   :root {
-    --container: min(100% - 28px, 1040px);
+    --container: min(100% - 48px, 1040px);
   }
 
   .brand strong {
