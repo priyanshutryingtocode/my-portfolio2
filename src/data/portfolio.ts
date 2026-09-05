@@ -129,6 +129,14 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/priyanshutryingtocode/LuminaBooks',
   },
   {
+    title: 'Chrimata AI',
+    description:
+      'An AI-powered finance manager and reconciliation tool that provides insights and automates financial data analysis.',
+    tags: ['Python', 'React', 'AI'],
+    liveUrl: 'https://chrimata-ai.vercel.app/',
+    githubUrl: 'https://github.com/priyanshutryingtocode/ChrimataAI',
+  },
+  {
     title: 'WebCalendar',
     description:
       'A web calendar inspired by physical wall calendars, with month imagery, date selection, and note-taking interactions.',
