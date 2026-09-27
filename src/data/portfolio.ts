@@ -71,15 +71,15 @@ export const projects: Project[] = [
     title: 'Influencer Matcher',
     description:
       'A web application that matches brands with social media influencers based on campaign requirements, audience demographics, and engagement metrics.',
-    tags: ['Python', 'Supabase', 'RAG'],
-    liveUrl: 'https://influencermatcher.streamlit.app//',
+    tags: ['Python', 'React', 'RAG'],
+    liveUrl: 'https://influencer-matcher-six.vercel.app',
     githubUrl: 'https://github.com/priyanshutryingtocode/influencer_matcher',
     featured: true,
   },
   {
     title: 'KinOrbia',
     description:
-      'A movie discovery and watchlist platform for film enthusiasts, built with a responsive Next.js interface and community-first product flows.',
+      'A movie and show discovery and watchlist platform for film enthusiasts, built with a responsive Next.js interface and community-first product flows.',
     tags: ['Next.js', 'Tailwind CSS', 'MongoDB'],
     liveUrl: 'https://kinorbia.vercel.app',
     githubUrl: 'https://github.com/priyanshutryingtocode/kinorbia',
@@ -249,8 +249,8 @@ export const experience: TimelineItem[] = [
     organization: 'Silvertouch Technologies Ltd',
     duration: 'May 2026 - June 2026',
     details: [
-      'Contributed to client-facing Angular/TypeScript applications within a cross-functional team, building 10+ reusable components and services, debugging production issues, and improving code modularity across the codebase.',
-      'Utilised RESTful APIs, bridging frontend interfaces with backend data services and ensuring reliable data flow; reduced application load time by 30% through strategic implementation of lazy loading.',
+      'Contributed to client-facing React/Angular/TypeScript applications within a cross-functional team, building 10+ components and services (including multi-lingual translations, carousel image galleries and responsive grids), along with debugging production issues.',
+      'Utilised RESTful APIs, bridging frontend interfaces with backend data services and ensuring reliable data flow; reduced application load time by 30% through strategic implementation of lazy loading for larger media (like videos).',
     ],
   },
   {
