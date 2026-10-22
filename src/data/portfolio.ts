@@ -68,12 +68,12 @@ export const skillGroups: SkillGroup[] = [
 
 export const projects: Project[] = [
     {
-    title: 'Influencer Matcher',
+    title: 'Spark',
     description:
-      'A web application that matches brands with social media influencers based on campaign requirements, audience demographics, and engagement metrics.',
+      'A web application that matches companies/brands with social media creators and customers/prospects based on campaign requirements, audience demographics, and engagement metrics.',
     tags: ['Python', 'React', 'RAG'],
-    liveUrl: 'https://influencer-matcher-six.vercel.app',
-    githubUrl: 'https://github.com/priyanshutryingtocode/influencer_matcher',
+    liveUrl: 'https://sparktech711.vercel.app/',
+    githubUrl: 'https://github.com/priyanshutryingtocode/Spark',
     featured: true,
   },
   {
