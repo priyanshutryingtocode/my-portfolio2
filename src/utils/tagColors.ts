@@ -1,35 +1,35 @@
 export const tagColorMap: Record<string, string> = {
-  'React': '#06b6d4',
-  'Next.js': '#06b6d4',
-  'Python': '#3b82f6',
-  'AI': '#a855f7',
-  'Machine Learning': '#a855f7',
-  'Deep Learning': '#a855f7',
-  'Generative AI': '#a855f7',
-  'Node.js': '#22c55e',
-  'Tailwind CSS': '#14b8a6',
-  'Supabase': '#16a34a',
-  'MongoDB': '#16a34a',
-  'PostgreSQL': '#16a34a',
-  'LangChain': '#a855f7',
-  'Streamlit': '#ef4444',
-  'Docker': '#3b82f6',
-  'C++': '#6b7280',
-  'OOP': '#6b7280',
-  'File Handling': '#6b7280',
-  'Flask': '#f97316',
-  'UI Design': '#f43f5e',
-  'UX': '#f43f5e',
-  'Image Processing': '#6366f1',
-  'Data Science': '#f59e0b',
-  'Matplotlib': '#f97316',
-  'API': '#06b6d4',
+  'React': '#0e7490',
+  'Next.js': '#0e7490',
+  'Python': '#2f5aa8',
+  'AI': '#6d4aa0',
+  'Machine Learning': '#6d4aa0',
+  'Deep Learning': '#6d4aa0',
+  'Generative AI': '#6d4aa0',
+  'Node.js': '#2f7a4f',
+  'Tailwind CSS': '#0f766e',
+  'Supabase': '#2f7a4f',
+  'MongoDB': '#2f7a4f',
+  'PostgreSQL': '#2f7a4f',
+  'LangChain': '#6d4aa0',
+  'Streamlit': '#b23a2e',
+  'Docker': '#2f5aa8',
+  'C++': '#57534e',
+  'OOP': '#57534e',
+  'File Handling': '#57534e',
+  'Flask': '#b4552a',
+  'UI Design': '#a83858',
+  'UX': '#a83858',
+  'Image Processing': '#4a4f9e',
+  'Data Science': '#a16207',
+  'Matplotlib': '#a85b1f',
+  'API': '#0e7490',
 };
 
 export function getTagColor(tag: string): string {
-  return tagColorMap[tag] || '#6b7280';
+  return tagColorMap[tag] || '#57534e';
 }
 
 export function getProjectAccentColor(tags: string[]): string {
-  return tags.length > 0 ? getTagColor(tags[0]) : '#6b7280';
+  return tags.length > 0 ? getTagColor(tags[0]) : '#57534e';
 }

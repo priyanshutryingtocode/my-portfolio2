@@ -18,10 +18,13 @@
   --muted: #9a9a9d;
   --quiet: #6f6f72;
   --accent: #c8a876;
+  --accent-contrast: #14110d;
   --logo-ink: #f3f1ec;
   --logo-css: #f3f1ec;
   --logo-langchain: #f3f1ec;
   --logo-pandas: #f3f1ec;
+  --logo-js: #f7df1e;
+  --logo-hf: #ffd21e;
   --header-bg: rgba(11, 11, 12, 0.82);
   --card-shadow: rgba(0, 0, 0, 0.35);
   --glow: rgba(200, 168, 118, 0.07);
@@ -36,19 +39,22 @@
 
 :root[data-theme='light'] {
   color-scheme: light;
-  --bg: #faf9f6;
-  --panel: #ffffff;
-  --line: rgba(0, 0, 0, 0.09);
-  --line-strong: rgba(0, 0, 0, 0.16);
-  --text: #1c1a18;
-  --muted: #5f5d59;
-  --quiet: #8a8781;
-  --accent: #a8874f;
-  --logo-ink: #1c1a18;
-  --logo-css: #663399;
-  --logo-langchain: #1c3c3c;
-  --logo-pandas: #150458;
-  --header-bg: rgba(250, 249, 246, 0.85);
+  --bg: #f6f3ed;
+  --panel: #fffdf8;
+  --line: rgba(64, 52, 36, 0.12);
+  --line-strong: rgba(64, 52, 36, 0.22);
+  --text: #211d17;
+  --muted: #57534a;
+  --quiet: #6f6a5e;
+  --accent: #8a6a34;
+  --accent-contrast: #fdfcf8;
+  --logo-ink: #211d17;
+  --logo-css: #5f3f8f;
+  --logo-langchain: #1b4341;
+  --logo-pandas: #221a4e;
+  --logo-js: #a08408;
+  --logo-hf: #a16207;
+  --header-bg: rgba(236, 231, 219, 0.88);
   --card-shadow: rgba(0, 0, 0, 0.12);
   --glow: rgba(168, 135, 79, 0.05);
 }
@@ -315,7 +321,7 @@ img {
 .button-primary {
   border-color: var(--accent);
   background: var(--accent);
-  color: #14110d;
+  color: var(--accent-contrast);
 }
 
 .button-primary:hover {
