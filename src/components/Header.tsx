@@ -52,7 +52,7 @@ export function Header({ activePage }: HeaderProps) {
             className="theme-button"
             type="button"
             aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-            onClick={toggle}
+            onClick={(event) => toggle(event)}
           >
             {theme === 'dark' ? (
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

@@ -136,10 +136,10 @@ export default function App() {
                 </a>
               </div>
             </div>
+            <Footer />
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

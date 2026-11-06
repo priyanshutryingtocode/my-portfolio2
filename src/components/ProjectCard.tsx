@@ -9,7 +9,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const accentColor = getProjectAccentColor(project.tags);
 
   return (
-    <article className="project-card" style={{ borderLeftColor: accentColor } as React.CSSProperties}>
+    <article className="project-card" style={{ '--rail-b': accentColor } as React.CSSProperties}>
       <div className="project-body">
         <h2>{project.title}</h2>
         <p>{project.description}</p>
